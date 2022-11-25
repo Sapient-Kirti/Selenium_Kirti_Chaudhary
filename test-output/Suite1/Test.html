@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 23 05:56:06 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>93 seconds (93133 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='day3.AssertionDemo.vefifyURL()'><b>vefifyURL</b><br>Test class: day3.AssertionDemo</td>
+<td></td>
+<td>3</td>
+<td>day3.AssertionDemo@659499f1</td></tr>
+<tr>
+<td title='day3.MyFirstTestNGTest.LogIn()'><b>LogIn</b><br>Test class: day3.MyFirstTestNGTest</td>
+<td></td>
+<td>0</td>
+<td>day3.MyFirstTestNGTest@82de64a</td></tr>
+<tr>
+<td title='day3.AssertionDemo.logOut()'><b>logOut</b><br>Test class: day3.AssertionDemo</td>
+<td></td>
+<td>0</td>
+<td>day3.AssertionDemo@659499f1</td></tr>
+<tr>
+<td title='day3.DemoTestNG.LogIn()'><b>LogIn</b><br>Test class: day3.DemoTestNG</td>
+<td></td>
+<td>0</td>
+<td>day3.DemoTestNG@51e69659</td></tr>
+<tr>
+<td title='day3.MyFirstTestNGTest.logoutFromApplication()'><b>logoutFromApplication</b><br>Test class: day3.MyFirstTestNGTest</td>
+<td></td>
+<td>0</td>
+<td>day3.MyFirstTestNGTest@82de64a</td></tr>
+<tr>
+<td title='day1.MyFirstTestScript2.addValue()'><b>addValue</b><br>Test class: day1.MyFirstTestScript2</td>
+<td></td>
+<td>3</td>
+<td>day1.MyFirstTestScript2@201a4587</td></tr>
+<tr>
+<td title='day3.DemoTestNG.createAccount()'><b>createAccount</b><br>Test class: day3.DemoTestNG</td>
+<td></td>
+<td>0</td>
+<td>day3.DemoTestNG@51e69659</td></tr>
+<tr>
+<td title='day3.LoginTest.verifyUrl()'><b>verifyUrl</b><br>Test class: day3.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>day3.LoginTest@1a18644</td></tr>
+<tr>
+<td title='day3.DemoTestNG.deleteAccount()'><b>deleteAccount</b><br>Test class: day3.DemoTestNG</td>
+<td></td>
+<td>0</td>
+<td>day3.DemoTestNG@51e69659</td></tr>
+<tr>
+<td title='day3.MyFirstTestNGTest.createAccount()'><b>createAccount</b><br>Test class: day3.MyFirstTestNGTest</td>
+<td></td>
+<td>0</td>
+<td>day3.MyFirstTestNGTest@82de64a</td></tr>
+<tr>
+<td title='day3.LoginTest.verifyWithWrongUsername()'><b>verifyWithWrongUsername</b><br>Test class: day3.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>day3.LoginTest@1a18644</td></tr>
+<tr>
+<td title='day3.LoginTest.verifywithBalank()'><b>verifywithBalank</b><br>Test class: day3.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>day3.LoginTest@1a18644</td></tr>
+<tr>
+<td title='day3.DemoTestNG.logoutFromApplication()'><b>logoutFromApplication</b><br>Test class: day3.DemoTestNG</td>
+<td></td>
+<td>0</td>
+<td>day3.DemoTestNG@51e69659</td></tr>
+<tr>
+<td title='day1.MyFirstTestScript3.admin()'><b>admin</b><br>Test class: day1.MyFirstTestScript3</td>
+<td></td>
+<td>42</td>
+<td>day1.MyFirstTestScript3@47e2e487</td></tr>
+<tr>
+<td title='day3.LoginTest.verifLoginWithValidCredentials()'><b>verifLoginWithValidCredentials</b><br>Test class: day3.LoginTest</td>
+<td></td>
+<td>4</td>
+<td>day3.LoginTest@1a18644</td></tr>
+<tr>
+<td title='day1.Selenium_Edge.name()'><b>name</b><br>Test class: day1.Selenium_Edge</td>
+<td></td>
+<td>5</td>
+<td>day1.Selenium_Edge@61001b64</td></tr>
+<tr>
+<td title='day3.MyFirstTestNGTest.deleteAccount()'><b>deleteAccount</b><br>Test class: day3.MyFirstTestNGTest</td>
+<td></td>
+<td>0</td>
+<td>day3.MyFirstTestNGTest@82de64a</td></tr>
+<tr>
+<td title='day1.MyFirstTestScript.loginPage()'><b>loginPage</b><br>Test class: day1.MyFirstTestScript</td>
+<td></td>
+<td>2</td>
+<td>day1.MyFirstTestScript@4310d43</td></tr>
+</table><p>
+</body>
+</html>
